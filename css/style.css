@@ -1,0 +1,89 @@
+body {
+  background-color: #dedede;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  text-align: center;
+  padding: 10px;
+}
+
+/* ========================================================
+   Mobile View (Default: 1 div across)
+   ======================================================== */
+div {
+  display: block;
+  width: 100%;
+  margin: 15px auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+div img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+/* ========================================================
+   Media Query #1: Tablet View (Trigger at 772px)
+   - Divs take 45% of viewport width (2 divs across)
+   - Images have maximum height of 30% of viewport height (30vh)
+   ======================================================== */
+@media screen and (min-width: 772px) {
+  div {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin: 10px;
+  }
+
+  img {
+    max-height: 30vh;
+  }
+
+  div img {
+    max-height: 30vh;
+    width: auto;
+  }
+}
+
+/* ========================================================
+   Media Query #2: Large Screen / Desktop View (Trigger at 998px)
+   - Divs take 30% of viewport width (3 divs across)
+   - No other changes needed
+   ======================================================== */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30%;
+  }
+}
